@@ -1,0 +1,135 @@
+				VIM Commands
+---------------------------------------------------------------------------------
+
+Note: press <ESC> to go to command mode or normal mode. Execute commands in 
+command mode only.
+
+1.Navigation: arrow keys or h(left), j(down), k(up) and l(right)
+
+2. To start vim from shell:- vim FILENAME <ENTER>
+
+3. To exit:- <ESC> :q 
+   To exit wihout saving: <ESC> :q!
+
+4. To save:- <ESC> :w
+
+5. To save and exit:- <ESC> :wq   or   ZZ
+
+6. To delete the cursor:- x
+
+7. insert before cursor:- i
+   insert after cursor:- I
+
+8. append after line:- A
+   append before line:- a
+
+9.  To delete from the cursor upto the next word:- dw
+
+10. To delete from the cursor to the end of the line:- d$
+
+11. To delete a line:- dd
+
+	Format for change:- operator[number]motion
+	
+
+12. To repeat a motion prepend it with a number-: 2w
+
+13. To move to the start of the line:- 0
+
+14. undo:- u
+
+15. undo line:- U
+
+16. redo:- Ctrl + R
+
+17. To put back text that has been deleted using dd:- p
+
+18. To replace character under the cursor:- r
+
+19. change from the cursor to the end of word:- ce
+
+20. change  fromt the cursor to the endo of line:- c$
+
+21. change entire line, same as dd:- cc
+	
+	Format for change: c[number]motion
+
+22. display location of file and file status:- CTRL + G 
+
+23. moves to the end of the file:- G
+
+24. moves to the line number:- [number]G
+
+25. moves to the first line:- gg
+
+26. forward search a word:- /word
+
+27. backward search a word:- ?word
+
+28. after a search find the next occurence in same direction:- n
+
+29. after a search find the next occurence in opposite direction:- N
+
+30. goto previous cursor position:- CTRL + O
+
+30. goto next cursor position:- CTRL + I
+
+31. Parentheses match, while on (,),[,],{,} :- %
+
+32. To substitute for the first old word in line:- :s/old/new
+
+33. To substitute for all old word in line:- :s/old/new/g
+
+34. To substitute for all occurences of word in file:- :%s/old/new/g
+
+35. To substitute for all occurences of word in file confirm:- :%s/old/new/gc
+
+36. Executes an external command:- :!command
+
+37. Writes the current vim file with file FILENAME to disk:- :w FILENAME
+
+38. Save visually seclected lines in file FILENAME:- v motion :w FILENAME
+
+39. Replace below the cursor with file FILENAME:- :r FILENAME
+
+40. Replace directory listing below the current cursor:- :r !ls
+
+41. Open a line below the cursor and insert:- o
+
+42. Open a line above the cursor and insert:- O
+
+43. Move to the end of the word:- e
+
+44. Visual mode:- v
+
+45. In viusal mode after selecting to copy:- y
+
+46. Yank or copy:- yy
+
+47. Yank or copy with count:- [number]yy
+
+48. paste text:- p
+
+49. Paste with count:- [number]p
+
+50. Replace a letter with cursor under:- R
+
+51. To set options:- :set [option]
+	ignorecase :- :set ic
+	partial match for search:- :set is
+	highlight search matches:- :set hls
+
+52. Prepend no to switch an option off:- :set no[option]
+	noignorecae:- :set noic
+	no partial match:- :set  nois
+	no hightlight:- :set nohls
+
+53. Help:- :help
+
+54. Help on command cmd:- :help cmd 
+
+55. Close help:- :q
+
+56. Command completion, all possibilities:- [command one or more letter] CTRL + D
+
+57. Command completion by one:- [Tab]
