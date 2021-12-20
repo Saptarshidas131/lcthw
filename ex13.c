@@ -1,53 +1,29 @@
+// include standard input/output header
 #include <stdio.h>
 
+// main function with command line parameters
 int main(int argc, char *argv[])
 {
-	if(argc != 2){
-		printf("ERROR: You need one argument.\n");
-		// this is how you abort a program
-		return 1;
-	}
+    // set i to 0
 	int i = 0;
-	for(i = 0; argv[1][i] != '\0'; i++){
-		char letter = argv[1][i];
 
-		switch(letter) {
-			case 'a':
-			case 'A':
-				printf("%d: 'A'\n", i);
-				break;
-			
-			case 'e':
-			case 'E':
-				printf("%d: 'E'\n", i);
-				break;
+	// go through each string in argv
+	// argv[0] is the name of the program
+	for(i = 1; i < argc; i++)
+	{
+        // print the 1 to to end the number of command line arguments and the string given as arguments
+		printf("arg %d: %s\n", i, argv[i]);
+	}
 
-			case 'i':
-			case 'I':
-				printf("%d: 'I'\n", i);
-				break;
+	// let's make our own array of strings
+	char *states[] = {"Delhi", "Maharastra", "Kernataka","Assam"};
+    // assign 4 to num_states
+	int num_states = 4;
 
-			case 'o':
-			case 'O':
-				printf("%d: 'O'\n", i);
-				break;
-
-			case 'u':
-			case 'U':
-				printf("%d: 'U'\n", i);
-				break;
-
-			case 'y':
-			case 'Y':
-				if(i > 2) {
-					// it's only somtimes Y
-					printf("%d: %c is not a vowel\n", i, letter);
-				}
-				break;
-
-			default:
-				printf("%d: %c is not vowel\n", i, letter);
-		}
+    // loop over the array of strings and print
+	for(i = 0; i < num_states; i++)
+	{
+		printf("state %d: %s\n", i, states[i]);
 	}
 
 	return 0;

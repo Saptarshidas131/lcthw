@@ -19,36 +19,33 @@ int main(int argc, char *argv[])
 	for(i = 0; argv[1][i] != '\0'; i++){
         // assign each letter to variable letter
 		char letter = argv[1][i];
+        // convert uppercase to lowercase letter
+        if (letter >= 65 && letter <= 90)
+           letter += 32; 
 
         // the letter checked against the cases and if a match is found then it is printed otherwise not a vowel is printed
 		switch(letter) {
 			case 'a':
-			case 'A':
-				printf("%d: 'A'\n", i);
+				printf("%d: 'a'\n", i);
 				break;
 			
 			case 'e':
-			case 'E':
-				printf("%d: 'E'\n", i);
+				printf("%d: 'e'\n", i);
 				break;
 
 			case 'i':
-			case 'I':
-				printf("%d: 'I'\n", i);
+				printf("%d: 'i'\n", i);
 				break;
 
 			case 'o':
-			case 'O':
-				printf("%d: 'O'\n", i);
+				printf("%d: 'o'\n", i);
 				break;
 
 			case 'u':
-			case 'U':
-				printf("%d: 'U'\n", i);
+				printf("%d: 'u'\n", i);
 				break;
 
 			case 'y':
-			case 'Y':
 				if(i > 2) {
 					// it's only somtimes Y
 					printf("%d: %c is not a vowel\n", i, letter);

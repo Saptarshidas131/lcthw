@@ -2,24 +2,41 @@
 
 int main(int argc, char *argv[])
 {
-	// go through each string in argv
-	
-	int i = 0;
-	while(i < argc) {
-		printf("arg %d: %s\n", i, argv[i]);
-		i++;
-	}
+	int numbers[4] = {0};
+	char name[4] = {'a'};
 
-	// let's make our own array of strings
-	char *states[] = {
-		"Delhi", "Maharastra", "Kernataka" , "Assam"
-	};
+	// first, print them out raw
+	printf("numbers: %d %d %d %d\n", numbers[0], numbers[1], numbers[2], numbers[3]);
+	printf("name each: %c %c %c %c\n", name[0], name[1], name[2], name[3]);
+	printf("name: %s\n", name);
 
-	int num_states = 4;
-	i = 0;	// watch for this
-	while(i < num_states) {
-		printf("state %d: %s\n", i, states[i]);
-		i++;
-	}
+	// setup the numbers
+	numbers[0] = 1;
+	numbers[1] = 2;
+	numbers[2] = 3;
+	numbers[3] = 4;
+
+	// setup the name
+	name[0] = 'S';
+	name[1] = 'd';
+	name[2] = 'a';
+	name[3] = 's';
+	name[4] = '\0';
+
+	// then print them out initialized
+	printf("numbers: %d %d %d %c\n", numbers[0], numbers[1],numbers[2],numbers[3]);
+	printf("name of each: %c %c %c %c\n", name[0], name[1], name[2], name[2]);
+
+	// print the name like a string
+	printf("name: %s\n", name);
+
+	// another way to use name
+	char *another = "SDas";
+
+	printf("another: %s\n", another);
+
+	printf("another each: %c %c %c %c\n", another[0], another[1], another[2], another[3]);
+
 	return 0;
+
 }
