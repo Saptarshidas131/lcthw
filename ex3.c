@@ -9,7 +9,7 @@ int main()
     // assign 72 to height
 	int height = 72;
 
-    // print age and height using formatted string %d is replaced by the varible value
+    // print age and height using formatted string %d which is replaced by the variable value
 	printf("I am %d years old.\n",age);
 	printf("I am %d inches tall.\n",height);
 
