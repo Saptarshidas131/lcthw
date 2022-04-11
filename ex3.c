@@ -6,7 +6,7 @@ int main()
 {
     // assign 10 to integer vriable age 
 	int age = 10;
-    // assign 72 to height
+    // assign 72 to integer variable height
 	int height = 72;
 
     // print age and height using formatted string %d which is replaced by the variable value
