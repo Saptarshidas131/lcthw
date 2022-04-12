@@ -4,16 +4,16 @@
 // main function with command line arguments
 int main(int argc, char *argv[])
 {
-    // assign 0 to i
-    int i = 0;
+    // assign 25 to i
+    int i = 25;
     
-    // start a  while loop and iterate as long as i is less than 25
-    while(i < 25)
+    // start a  while loop and iterate as long as i is greater than or equal to 0
+    while(i >= 0)
     {
         // print the value of i
         printf("%d ",i);
-        // increment i by 1, post increment
-        i++;
+        // decrement i by 1, post decrement
+        i--;
     }
     // return 0 from main
     return 0;
