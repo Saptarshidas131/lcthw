@@ -1,10 +1,10 @@
 // include standard input/output header
 #include <stdio.h>
-// include ctype header for isalpha and isblank
+// include ctype header for isalpha and isblank functions
 #include <ctype.h>
 
 // forward declarations
-// declare the functions before use
+// declare the functions before use or defining
 int can_print_it(char ch);
 void print_letters(char arg[]);
 
@@ -29,7 +29,7 @@ void print_letters(char arg[])
         // assign each character of the argument to a character variable ch
 		char ch = arg[i];
 
-        // check if it is printable by passing it to can_print_it function
+        // check if it is alphabet or space by passing it to can_print_it function
 		if(can_print_it(ch)) {
 			printf("'%c' == %d ", ch, ch);
 		}
