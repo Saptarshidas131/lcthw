@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     // initilize a character array
 	char name[] = "Saptarshi";
     // initialize another character array
-	char full_name[] = {'S', 'a', 'p', 't', 'a', 'r', 's', 'h', 'i', ' ', 'D', 'a', 's'};
+	char full_name[] = {'S', 'a', 'p', 't', 'a', 'r', 's', 'h', 'i', ' ', 'D', 'a', 's','\0'};
 
 	// WARNING: On some systems you may have to change the
 	//  %ld in this code to a %u since it will use unisigned ints
