@@ -2,10 +2,10 @@
 
 int main(int argc, char *argv[])
 {
-    // initialize the first element with 0 and the rest of array is filled with 0
+    // decalare an array of size 4 and initialize the first element with 0 and the rest of array is filled with 0
 	int numbers[4] = {0};
-    // initialize the first element with 'a' and the rest of array is filled with 0
-	char name[4] = {'a'};
+    // declare a character array and initialize the first element with 'a' and the rest of array is filled with 0
+	char name[4] = {'a'} ;
 
 	// first, print them out raw
     // print the numbers array element by element
@@ -31,8 +31,8 @@ int main(int argc, char *argv[])
 	name[4] = '\0';
 
 	// then print them out initialized
-	printf("numbers: %d %d %d %c\n", numbers[0], numbers[1],numbers[2],numbers[3]);
-	printf("name of each: %c %c %c %c\n", name[0], name[1], name[2], name[2]);
+	printf("numbers: %d %d %d %d\n", numbers[0], numbers[1],numbers[2],numbers[3]);
+	printf("name of each: %c %c %c %c\n", name[0], name[1], name[2], name[3]);
 
 	// print the name like a string
 	printf("name: %s\n", name);
