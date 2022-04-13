@@ -4,14 +4,14 @@
 // main function with command line parameters
 int main(int argc, char *argv[])
 {
-    // set i to 0
+    // assign 0 to i
 	int i = 0;
 
 	// go through each string in argv
-	// argv[0] is the name of the program
+	// argv[0] is the name of the program, so skipping it and starting from 1
 	for(i = 1; i < argc; i++)
 	{
-        // print the 1 to to end the number of command line arguments and the string given as arguments
+        // print the ith number of command line argument and the string passed as argument
 		printf("arg %d: %s\n", i, argv[i]);
 	}
 
