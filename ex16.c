@@ -25,6 +25,7 @@ struct Person *Person_create(char *name, int age, int height,
         assert(who != NULL);
 
         // strdup duplicates the string in name and set the name attribute in the structre Person, it allocates memory for the name somewhat like malloc by copying the original string into the memory it creates
+        // -> is used to access individual elements within a structure using pointer and who->name is same as (*who).name
         who->name = strdup(name);
         // all the attributes in struct Person are set to the values of the parameters passed in function call
         who->age = age;
@@ -76,7 +77,7 @@ int main(int argc, char *argv[])
     Person_print(frank);
 
     // make everyone age 20 and print them again
-    // change the attributes for joe
+    // change the attributes for joe, -> is used to access elements within a structure using pointer
     joe->age += 20;
     joe->height -= 2;
     joe->weight += 40;
